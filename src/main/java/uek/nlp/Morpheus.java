@@ -1,25 +1,15 @@
 package uek.nlp;
 
-
 import pl.sgjp.morfeusz.MorfeuszUsage;
 import pl.sgjp.morfeusz.Morfeusz;
 import pl.sgjp.morfeusz.ResultsIterator;
 import pl.sgjp.morfeusz.app.MorfeuszUtils;
 
-
-import java.util.ArrayList;
-
 public class Morpheus {
 
     public static void main(String[] args) {
-        System.out.println("test");
+        System.out.println("test2");
         new Morpheus();
-    }
-
-
-
-    static public int test() {
-        return 1;
     }
 
     public Morpheus() {

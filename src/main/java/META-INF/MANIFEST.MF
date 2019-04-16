@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
+Class-Path: . src/main/resources/lib/linux
 Main-Class: uek.nlp.Morpheus
-Class-Path: repo.pl.sgjp.morfeusz.jmorfeusz
 
