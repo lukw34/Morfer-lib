@@ -1,7 +1,8 @@
 package uek.nlp;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import java.io.File;
-import java.util.ArrayList;
 
 public interface MorphologicalAnalyzer {
     String[] analyzeToArray(String text);
@@ -9,4 +10,7 @@ public interface MorphologicalAnalyzer {
 
     String analyzeToCSV(String text);
     String analyzeToCSV(File fileWithText);
+
+    String analyzeToJSON(String text) throws JsonProcessingException;
+    String analyzeToJSON(File fileWithText) throws JsonProcessingException;
 }

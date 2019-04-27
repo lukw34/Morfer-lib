@@ -37,4 +37,5 @@ public class Segment {
     public void setInterpretations(ArrayList<Interpretation> interpretations) {
         this.interpretations = interpretations;
     }
+
 }

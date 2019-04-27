@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class MorferService {
 
-    public ArrayList<Segment> createModel(String sample) {
+    public ArrayList<Segment> getParsedResult(String sample) {
         int index = -1;
         ArrayList<Segment> morferResult = new ArrayList<>();
         ArrayList<Interpretation> actualInterpretationList = new ArrayList<>();
