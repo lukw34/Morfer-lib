@@ -17,7 +17,7 @@ public class Morfer implements MorphologicalAnalyzer {
 
     public static void main(String[] args) {
         Morfer instance = new Morfer("./inst/java/libs");
-        instance.analyzeToCSV("Ala ma kota");
+        System.out.println(instance.analyzeToCSV("Ala ma kota"));
     }
 
     public Morfer(String libraryPath) {
