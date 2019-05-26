@@ -39,7 +39,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>uek.nlp.Morpheus</mainClass>
+                            <mainClass>uek.nlp.Morfer</mainClass>
                         </manifest>
                     </archive>
 

@@ -23,6 +23,11 @@ public class Morfer implements MorphologicalAnalyzer {
         mapper = new ObjectMapper();
     }
 
+    public static void main(String[] args) {
+        Morfer instance = new Morfer();
+        System.out.println(instance.analyzeToCSV("Ala ma kota"));
+    }
+
     @Override
     public String[] analyzeToArray(String text) {
       return this.morferService.getMorferResult(text).toArray(new String[0]);
