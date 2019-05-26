@@ -15,17 +15,17 @@ public class Morfer implements MorphologicalAnalyzer {
     CSVMorferService csvMorferService;
     ObjectMapper mapper;
 
-    public Morfer() {
-        NativeLibrary.load("./inst/java/libs");
+    public static void main(String[] args) {
+        Morfer instance = new Morfer("./inst/java/libs");
+        instance.analyzeToCSV("Ala ma kota");
+    }
+
+    public Morfer(String libraryPath) {
+        NativeLibrary.load(libraryPath);
         fileService = new FileService();
         morferService = new MorferService();
         csvMorferService = new CSVMorferService();
         mapper = new ObjectMapper();
-    }
-
-    public static void main(String[] args) {
-        Morfer instance = new Morfer();
-        System.out.println(instance.analyzeToCSV("Ala ma kota"));
     }
 
     @Override
